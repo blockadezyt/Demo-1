@@ -1,0 +1,255 @@
+/* Style for the scrollbar itself */
+::-webkit-scrollbar {
+    width: 10px; /* Width of the vertical scrollbar */
+    height: 12px; /* Height of the horizontal scrollbar */
+}
+
+/* Style for the track (background of the scrollbar) */
+::-webkit-scrollbar-track {
+    background-color: #584e4e; /* Light gray background */
+    position: relative;
+}
+
+/* Style for the thumb (the draggable part of the scrollbar) */
+::-webkit-scrollbar-thumb {
+    background-color: #5c8181; /* Darker gray thumb */
+    border-radius: 100px; /* Rounded corners */
+    border: 1px solid #3b7a66; /* Add a border to the thumb */
+}
+
+/* Style for the thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #4c7277; /* Darker thumb color on hover */
+}
+
+
+/* General Reset & Font */
+body {
+    background: linear-gradient(to bottom, #C5A4B4, #8F9CC1);
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-weight: bold;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.navbar-left,
+.navbar-center,
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+}
+
+.brand-name {
+    font-size: 26px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 8px 12px;
+}
+
+/* Try Free Button */
+.cta-button {
+    background: linear-gradient(45deg, #8259e37a 0%, #48317d79 45%);
+    color: black;
+    font-size: 16px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    width: 107px;
+    height: 40px;
+}
+
+.cta-button a {
+    color: black;
+    text-decoration: none;
+}
+
+.cta-button:hover {
+    background: linear-gradient(45deg, #48317D 0%, #8359E3 100%);
+    transform: scale(1.05);
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 100px 0 100px;
+    gap: 50px;
+}
+
+.hero-text {
+    max-width: 550px;
+}
+
+.hero-heading {
+    color: #222E56;
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0 0 20px 0;
+}
+
+.hero-subheading {
+    color: #222E56;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 30px 0;
+}
+
+.cta-button-hero {
+    background: linear-gradient(45deg, #8259e36b 0%, #48317de3 100%);
+    color: rgba(255, 255, 255, 0.836);
+    font-size: 16px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    width: 130px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.cta-button-hero:hover {
+    background: linear-gradient(45deg, #48317D 0%, #8359E3 100%);
+    transform: scale(1.05);
+}
+
+.hero-image {
+    position: absolute;
+    right: 100px;
+    top: 50px;
+}
+
+/* Track Section */
+.track-heading {
+    color: #222E56;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 100px;
+}
+
+.track-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 10px 0 100px;
+    gap: 50px;
+    height: 144px;
+    width: 205px;
+}
+
+/* Footer Section */
+.footer-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 100px 100px 100px;
+    gap: 50px;
+    height: 64px;
+    width: 244px;
+}
+
+.footer-text {
+    color: #222E56;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 100px;
+}
+
+/* Box Container */
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 30px 30px;
+    padding-top: 200px;
+    padding-left: 100px;
+}
+
+.image-box {
+    width: 150px;
+    height: 166px;
+    background: linear-gradient(145deg, #aeb0ff38, #393a9627);
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.shifted {
+    transform: translateX(40%);
+    filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.5));
+}
+
+.image-box {
+    filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.5));
+}
+
+/* Message Box Section */
+.MBox {
+    position: relative;
+    width: 273px;
+    height: 91px;
+    padding-left: 30px;
+    margin-right: 20px;
+    border-radius: 8px;
+    background-color: transparent;
+    align-items: center;
+    bottom: 300px;
+    left: 900px;
+    padding-bottom: 100px;
+}
+
+.MBox img {
+    position: relative;
+    right: 60px;
+    top: 45px;
+    width: 50px;
+    height: 50px;
+}
+
+.Message {
+    font-size: 10px;
+    color: #333;
+    line-height: 1.4;
+    display: flex;
+    flex-direction: column;
+}
+
+.MBox h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #130F49;
+    margin: 0 0 5px 0;
+}
+
+.MBox p {
+    font-size: 10px;
+    color: #555;
+    margin: 0;
+}
